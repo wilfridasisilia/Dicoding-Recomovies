@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movies Web</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="regist.html">Regist</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="left">
+          <h1 class="nama">Halo, <span id="nama"></span></h1>
+          <h2>Selamat datang di <span class="RecoMovies">RecoMovies</span></h2>
+          <aside>
+            <img
+              src="assets/image/movieimg.jpg"
+              alt="gambar logo"
+              class="logo"
+            />
+          </aside>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="right">
+          <article>
+            <h3>RecoMovies</h3>
+            <p>
+              <span class="RecoMovies">RecoMovies</span> merupakan sebuah
+              website yang akan membantu kamu untuk menemukan berbagai jenis
+              movies dengan berbagai genre dari belahan dunia. Kami akan
+              merekomendasikan banyak movies menarik untuk kamu!
+            </p>
+            <p>
+              <span class="RecoMovies">RecoMovies</span> akan update terus
+              rekomendasinya setiap minggu lho.. jadi kamu gaperlu panik akan
+              kehabisan tontonan untuk mengisi waktu santai kamu.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <script>
+        let name = prompt("Masukkan nama kamu");
+        document.getElementById("nama").innerText = name;
+      </script>
+    </main>
+    <footer>&copy; 2024: Wilfrida Sisilia</footer>
+  </body>
+</html>
